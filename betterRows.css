@@ -11,12 +11,12 @@
    ? VARIABLES
 */
 :root {
-  --gr-level-1: linear-gradient(to left, #0cebeb, #20e3b2, #29ffc6);
-  --gr-level-2: linear-gradient(to left, #000046, #1cb5e0);
-  --gr-level-3: linear-gradient(to right, #1d976c, #93f9b9);
-  --gr-level-4: linear-gradient(to right, #dce35b, #45b649);
+  --gr-level-1: linear-gradient(to right, #fc5c7d, #6a82fb);
+  --gr-level-2: #1cb5e0;
+  --gr-level-3: #1d976c;
+  --gr-level-4: #dce35b;
   --gr-level-5: linear-gradient(to right, #11998e, #38ef7d);
-  --gr-level-6: linear-gradient(to right, #fc5c7d, #6a82fb);
+  --gr-level-6: #6a82fb;
   --gr-level-7: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
   --gr-level-8: linear-gradient(to bottom, #22c1c3, #fdbb2d);
   --gr-level-9: linear-gradient(to left, #396afc, #2948ff);
@@ -24,12 +24,13 @@
   --gr-level-11: linear-gradient(to left, #159957, #155799);
   --gr-level-12: linear-gradient(to right, #16222a, #3a6073);
 
-  --max-width: 200px;
+  --max-width: 270px;
   --line-height: 2px;
 
   --indent-start-pixel: 25;
   --animation-delay: 0.25s;
   --border-radius: 1px;
+  --last-border-radius: 15px;
 }
 
 /*
@@ -40,14 +41,15 @@
     width: var(--line-height);
   }
 
-  70% {
+  60% {
     width: var(--max-width);
     height: 100%;
   }
 
   100% {
+    border-radius: var(--last-border-radius);
     width: var(--max-width);
-    height: 4px;
+    height: var(--line-height);
   }
 }
 
